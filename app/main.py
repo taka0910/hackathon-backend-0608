@@ -25,7 +25,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",  # Reactのサーバーを許可する
-    "https://hackathon-wine-mu.vercel.app/"  # 追加するオリジン
+    "https://hackathon-wine-mu.vercel.app"  # 追加するオリジン
 ]
 
 app.add_middleware(
