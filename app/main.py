@@ -38,7 +38,7 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return { dotenv_path : OPENAI_APIKEY}
+    return { "hello" : "world"}
 
 @app.post("/upload/")
 async def upload_audio(files: List[UploadFile] = File(...)):
